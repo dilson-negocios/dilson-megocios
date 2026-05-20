@@ -182,8 +182,10 @@
       toggleCart();
     }
 
-    // Iniciar
-    renderProdutos();
+   // Iniciar apenas quando a página carregar totalmente
+    window.onload = function() {
+      renderProdutos();
+    };
   </script>
 </body>
 </html>
